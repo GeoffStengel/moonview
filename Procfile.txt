@@ -1,1 +1,1 @@
-web: gunicorn moonview.wsgi:application --log-file -
+web: gunicorn moons.wsgi:application --log-file -
