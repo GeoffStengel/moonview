@@ -33,12 +33,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 #We Added This For Your .env Files To Stay Secure
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG')
+#DEBUG = os.environ.get('DEBUG')
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'  # Ensure DEBUG is a boolean
 #We Added This For Your .env Files To Stay Secure
 ADMIN_URL = os.environ.get('ADMIN')
 #We Added This For Your .env Files To Stay Secure
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['HOSTS']
 
 
 # Application definition
@@ -94,8 +95,7 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = '(HOSTS)'
-#We Added This
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -131,7 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
