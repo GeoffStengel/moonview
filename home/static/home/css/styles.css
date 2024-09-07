@@ -1,0 +1,57 @@
+/***CSS For Main base.html Page***/
+*{
+margin: 0;
+padding: 0;
+}
+
+/***Body Of The Website***/
+body{
+    background: #eecaf0;
+    width: 100%;
+    height: 100vh;
+    font-family: monospace;
+}
+
+
+/**Nav Bar**/
+nav {
+    display: grid;
+    width: 100%;
+    height: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    background: #aaaaaa; 
+    text-align: center;
+    justify-self: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+/**Tag Line Or Business Name**/
+.nav-logo{
+    text-align: center;
+    max-height: 100%;
+    /**text-justify: center;**/
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    grid-column: 4;
+}
+
+/***Nav Buttons At Top Of Website***/
+.nav-buttons {
+    max-height: 100%;
+    text-justify: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+/***Container Wraps Block Content And Main Section***/
+.container{
+    max-width: 600px;
+    height: 100%;
+    background: rgb(187, 215, 215);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+

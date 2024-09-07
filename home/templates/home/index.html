@@ -1,0 +1,19 @@
+    <!--index.html Main Home Page For Website Landing Page-->
+{% extends "home/base.html" %}
+   <div class="wrapper">
+        <!--Content Block Blocks Other Content From base.html-->
+    {% block content%}
+    
+            <!--For Loop-->
+        {% for post in posts %}
+            </br>
+            <!--To Access Variables Use Double Curlys-->
+            <h3> {{ post.title }} </h3> 
+            <p>By {{ post.author }} on {{ post.date_posted }} </p>
+            <p>{{ post.content }}</p>
+            </br>
+            <p></p>
+        {% endfor %}
+
+    {% endblock content%} 
+</div>     
