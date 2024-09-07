@@ -1,1 +1,1 @@
-web gunicorn TEST_Heroku.wsgi:application --log-file -
+web gunicorn moonview.wsgi:application --log-file -
